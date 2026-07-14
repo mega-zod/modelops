@@ -1,0 +1,19 @@
+services:
+  modelops-ai:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      APP_ENV: production
+      APP_DEBUG: "false"
+      DATABASE_PATH: /app/data/modelops.db
+    volumes:
+      - modelops-data:/app/data
+      - modelops-generated:/app/generated
+    restart: unless-stopped
+
+volumes:
+  modelops-data:
+  modelops-generated:
