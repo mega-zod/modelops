@@ -74,6 +74,8 @@ The container listens on port `8000` and stores SQLite data in a Docker volume. 
 
 For the fastest hosted path, use [render.yaml](C:/Users/user/Documents/modelops-ai/render.yaml) and the launch steps in [docs/go-live.md](C:/Users/user/Documents/modelops-ai/docs/go-live.md).
 
+For a self-managed Ubuntu VPS with automatic HTTPS, use [docker-compose.vps.yml](C:/Users/user/Documents/modelops-ai/docker-compose.vps.yml) and [docs/vps-deploy.md](C:/Users/user/Documents/modelops-ai/docs/vps-deploy.md).
+
 ## Test
 
 ```powershell
